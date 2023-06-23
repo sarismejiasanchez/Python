@@ -49,3 +49,55 @@ Janani Ravi has a master’s degree from Stanford and is a certified Google Clou
 **Area(s) of expertise:**  Data science, machine learning, cloud computing, programming languages, full-stack development
 
 **Interesting fact:**  Absolutely loves dogs and has 4 dogs of her own
+
+## Exersice: Introduction to Functions in Python
+
+### Describe what functions are, and how they are useful in programming.
+
+#### Function
+ - A piece of reusable codewhich may:
+	 - Perform an action or a calculation.
+	 - Can be customized to work on different inputs.
+	 - Returns a result to the user.
+ - Defining a function does not execute code.
+ - A function once defined can be invoked.
+ - Invoking a function will execute the code associated with the function.
+
+### Describe how you pass information to, and get information from functions.
+
+#### Input Arguments
+
+ - Information can be passed into a function using **input arguments**.
+ - Input arguments are specified at the time of function definition.
+ - Input arguments are variables which can be accessed by the function to perform actions o calculations.
+ - When a function is invoked, the user specifies values that are associated with the input arguments.
+ - Input arguments can be any data type - primitive types (float, int) or complex types (lists, dictionaries, and even custom types).
+
+#### Return Values
+
+ - Information is returned from a function using the **return** statement.
+ - The default return value is the special Python value **None**.
+ - The return values are typically the result of the calculation or operation.
+ - Return values can be any kind of data.
+ - Basic primitive types or complex types such as lists, dictionaries or strings.
+
+### List the differences between positional arguments and keyword arguments.
+
+#### Positional Arguments
+
+ - Input arguments are specified along with the function definition.
+ - Values assigned to positional arguments are based on their **position** in the function definition.
+ - Values are assigned to arguments at the time of **function invocation**.
+ - Arguments are NOT referred to by the variable names.
+ - The **order of the values should match the order of the arguments**.
+ - Unless default values are specified, positional arguments are the **requiered** arguments.
+ - Positional arguments should be specified **before** keyword arguments.
+
+#### Keyword Arguments
+
+ - No change  in the custom function definition.
+ - Values assigned to keyword arguments by **variable name** during **function invocation**.
+ - Arguments are referred to by the variable name.
+ - The order of the values need NOT match the original order of the arguments in the function definition.
+ - Unless default values are specified, keyword arguments are required arguments.
+ - Keyword arguments should always be specified **after** positional arguments.
