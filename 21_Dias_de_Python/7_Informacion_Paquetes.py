@@ -11,7 +11,7 @@ A partir de esta información, debes crear una función que calcule el peso tota
 Es importante mencionar que la función debe redondear el peso total a dos decimales y que cada destino debe aparecer sólo una vez en el diccionario.
 '''
 
-[
+package_list = [
   (1, 20, "Mexico"),
   (2, 15.5, "Colombia"),
   (3, 30, "Mexico"),
@@ -23,3 +23,34 @@ Es importante mencionar que la función debe redondear el peso total a dos decim
   (9, 22.3, "Argentina"),
   (10, 14.8, "Colombia")
 ]
+
+def get_package_info(package_list):
+  total_weight = 0
+  destinations = {}
+  
+  for package in package_list:
+    package_id, weight, destination = package
+
+    # Sumar el peso de cada paquete al peso total
+    total_weight += weight
+
+    # Contar la cantidad de paquetes para cada destino
+    if destination in destinations:
+      destinations[destination] += 1
+    else:
+      destinations[destination] = 1
+
+  # Redondear el peso total a dos decimales
+  total_weight = round(total_weight, 2)
+
+  # Crear el diccionario de resultados
+  package_info = {
+      "total_weight": total_weight,
+      "destinations": destinations
+  }
+
+  return package_info
+  
+
+response = get_package_info(package_list)
+print(response)
